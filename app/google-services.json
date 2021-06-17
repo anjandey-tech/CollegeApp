@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "941980987609",
+    "project_id": "my-collegeapp-b1e03",
+    "storage_bucket": "my-collegeapp-b1e03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941980987609:android:d709c63a9f5408676d0ec8",
+        "android_client_info": {
+          "package_name": "com.inturnsala.admincollegeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941980987609-gi7mmkr1dt5o08qhjd44ma4df1nnofp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-ZyCI-mnIJZ1EbPwhhoR2PMHDg1yoKkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941980987609-gi7mmkr1dt5o08qhjd44ma4df1nnofp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
