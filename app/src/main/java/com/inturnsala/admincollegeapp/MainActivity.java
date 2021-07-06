@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.inturnsala.admincollegeapp.faculty.UpdateFaculty;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    CardView uploadNotice,addGalleryImage,addEbook;
+    CardView uploadNotice,addGalleryImage,addEbook,faculty,deleteNotice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,10 +20,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         uploadNotice = findViewById(R.id.addNotice);
         addGalleryImage = findViewById(R.id.addGalleryImage);
         addEbook=findViewById(R.id.addEbook);
+        faculty=findViewById(R.id.faculty);
+        deleteNotice = findViewById(R.id.deleteNotice);
         uploadNotice.setOnClickListener(this);
         addGalleryImage.setOnClickListener(this);
         addEbook.setOnClickListener(this);
-
+        faculty.setOnClickListener(this);
+        deleteNotice.setOnClickListener(this);
 
     }
 
@@ -42,6 +47,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(MainActivity.this,UploadPdfActivity.class);
                 startActivity(intent);
                 break;
+
+            case R.id.faculty:
+                intent = new Intent(MainActivity.this, UpdateFaculty.class);
+                startActivity(intent);
+                break;
+
+            case R.id.deleteNotice:
+                intent = new Intent(MainActivity.this, DeleteNoticeActivity .class);
+                startActivity(intent);
+                break;
+
+
         }
 
     }
